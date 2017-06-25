@@ -53,3 +53,5 @@ names(df) <- gsub("-","",names(df))
 names(df) <- gsub("\\(","",names(df))
 names(df) <- gsub("\\)","",names(df))
 names(bd) <- gsub("\\.","",names(bd))
+
+write.table(bd, file="meansBySubjectAndActivity.txt", row.names=F)
